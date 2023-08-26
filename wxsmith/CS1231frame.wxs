@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="CS1231Frame">
+		<size>894,463</size>
+		<id_arg>0</id_arg>
+		<object class="wxNotebook" name="ID_NOTEBOOK" variable="Notebook" member="yes">
+			<pos>0,8</pos>
+			<size>832,450</size>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_LOGICPANEL" variable="LogicPanel" member="yes">
+					<handler function="OnLogicPanelMouseEnter" entry="EVT_ENTER_WINDOW" />
+					<object class="wxTextCtrl" name="ID_LOGICTEXTCTRL" variable="LogicTextCtrl" member="yes">
+						<pos>16,40</pos>
+						<size>336,24</size>
+					</object>
+					<object class="wxButton" name="ID_ANDBTN" variable="AndBtn" member="yes">
+						<label>∧</label>
+						<pos>16,8</pos>
+						<size>64,23</size>
+						<handler function="OnAndBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_ORBTN" variable="OrBtn" member="yes">
+						<label>∨</label>
+						<pos>88,8</pos>
+						<size>64,23</size>
+						<handler function="OnOrBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_COMPUTEBTN" variable="ComputeBtn" member="yes">
+						<label>Compute</label>
+						<pos>16,72</pos>
+						<handler function="OnComputeBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxRichTextCtrl" name="ID_EQUATIONRICHTEXTCTRL" variable="EquationRichTextCtrl" member="yes">
+						<pos>16,104</pos>
+						<size>336,280</size>
+						<style>wxRE_MULTILINE|wxRE_READONLY</style>
+					</object>
+					<object class="wxButton" name="ID_NEGATEBTN" variable="NegateBtn" member="yes">
+						<label>~</label>
+						<pos>160,8</pos>
+						<size>64,23</size>
+						<handler function="OnNegateBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_IMPLYBTN" variable="ImplyBtn" member="yes">
+						<label>→</label>
+						<pos>232,8</pos>
+						<size>64,23</size>
+						<handler function="OnImplyBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_CLEARBTN" variable="ClearBtn" member="yes">
+						<label>Clear</label>
+						<pos>280,72</pos>
+						<handler function="OnClearBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxGrid" name="ID_LOGICGRID" variable="LogicGrid" member="yes">
+						<cols>4</cols>
+						<rows>8</rows>
+						<pos>360,16</pos>
+						<size>512,368</size>
+					</object>
+				</object>
+				<label>Logic</label>
+			</object>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_PANEL2" variable="ModuloPanel" member="yes">
+					<size>478,420</size>
+					<object class="wxTextCtrl" name="ID_INPUTTEXTCTRL" variable="InputBaseTextCtrl" member="yes">
+						<pos>8,8</pos>
+						<size>160,21</size>
+					</object>
+					<object class="wxButton" name="ID_CONVERTBTN" variable="ConvertBtn" member="yes">
+						<label>Convert</label>
+						<pos>176,8</pos>
+						<handler function="OnConvertBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_OUTPUTBASETEXTCTRL" variable="OutputBaseTextCtrl" member="yes">
+						<pos>264,8</pos>
+						<size>160,21</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_BASETEXTCTRL" variable="BaseTextCtrl" member="yes">
+						<value>10,2</value>
+						<pos>168,40</pos>
+						<size>96,21</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_INPUTFACTORISETEXTCTRL" variable="InputFactoriseTextCtrl" member="yes">
+						<pos>8,72</pos>
+						<size>160,21</size>
+					</object>
+					<object class="wxButton" name="ID_FACTORISEBTN" variable="FactoriseBtn" member="yes">
+						<label>Factorise</label>
+						<pos>176,72</pos>
+						<handler function="OnFactoriseBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_OUTPUTFACTORISETEXTCTRL" variable="OutputFactoriseTextCtrl" member="yes">
+						<pos>264,72</pos>
+						<size>160,32</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_INPUT2FACTORISETEXTCTRL" variable="Input2FactoriseTextCtrl" member="yes">
+						<pos>8,118</pos>
+						<size>160,21</size>
+					</object>
+					<object class="wxButton" name="ID_LCMBTN" variable="LCMBtn" member="yes">
+						<label>LCM</label>
+						<pos>176,104</pos>
+						<handler function="OnLCMBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_GCFBTN" variable="GCDBtn" member="yes">
+						<label>GCD</label>
+						<pos>176,128</pos>
+						<handler function="OnGCDBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_OUTPUT2FACOTRISETEXTCTRL" variable="Output2FactoriseTextCtrl" member="yes">
+						<pos>264,112</pos>
+						<size>160,32</size>
+					</object>
+					<object class="wxButton" name="ID_SWAPBTN" variable="SwapBtn" member="yes">
+						<label>Swap</label>
+						<pos>48,94</pos>
+						<handler function="OnSwapBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxRichTextCtrl" name="ID_EUCLIDEANRICHTEXTCTRL" variable="EuclideanRichTextCtrl" member="yes">
+						<pos>8,176</pos>
+						<size>240,216</size>
+						<style>wxRE_MULTILINE|wxRE_READONLY</style>
+					</object>
+					<object class="wxStaticText" name="ID_EUCLIDEANLBL" variable="EuclideanLbl" member="yes">
+						<label>Euclidean Algorithm</label>
+						<pos>8,160</pos>
+					</object>
+					<object class="wxButton" name="ID_EUCLIDEANBTN" variable="GCDEuclideanBtn" member="yes">
+						<label>GCD (Euclidean)</label>
+						<pos>128,152</pos>
+						<size>120,23</size>
+						<handler function="OnGCDEuclideanBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_EXPRESSIONTEXTCTRL" variable="ExpressionTextCtrl" member="yes">
+						<pos>440,8</pos>
+						<size>120,21</size>
+					</object>
+					<object class="wxButton" name="ID_EVALUATEBTN" variable="EvaluateBtn" member="yes">
+						<label>Evaluate</label>
+						<pos>440,32</pos>
+						<handler function="OnEvaluateBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxRichTextCtrl" name="ID_EXPRESSIONRICHTEXTCTRL" variable="ExpressionRichTextCtrl" member="yes">
+						<pos>440,56</pos>
+						<size>264,336</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_MODULUSTEXTCTRL" variable="ModulusTextCtrl" member="yes">
+						<pos>592,32</pos>
+						<size>96,21</size>
+					</object>
+					<object class="wxStaticText" name="ID_MODULUSLBL" variable="ModulusLbl" member="yes">
+						<label>mod</label>
+						<pos>565,35</pos>
+						<size>26,16</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_EXPRESSION2TEXTCTRL" variable="Expression2TextCtrl" member="yes">
+						<pos>592,8</pos>
+						<size>112,21</size>
+					</object>
+					<object class="wxStaticText" name="ID_EQUIVALENTLBL" variable="EquivalentLbl" member="yes">
+						<label>≡</label>
+						<pos>568,10</pos>
+					</object>
+				</object>
+				<label>Modulo</label>
+			</object>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_GRAPHPANEL" variable="GraphPanel" member="yes">
+					<pos>4,67</pos>
+					<size>721,379</size>
+					<handler function="OnGraphMathPlotLeftDown" entry="EVT_LEFT_DOWN" />
+					<handler function="OnGraphPanelLeftUp" entry="EVT_LEFT_UP" />
+					<handler function="OnGraphPanelMouseMove" entry="EVT_MOTION" />
+					<object class="wxTextCtrl" name="ID_GRAPHTEXTCTRL" variable="GraphTextCtrl" member="yes">
+						<pos>8,8</pos>
+						<size>200,304</size>
+						<style>wxTE_MULTILINE</style>
+					</object>
+					<object class="mpWindow" name="ID_GRAPHMATHPLOT" variable="GraphMathPlot" member="yes">
+						<pos>216,104</pos>
+						<size>664,264</size>
+						<enabled>0</enabled>
+					</object>
+					<object class="wxButton" name="ID_PLOTBTN" variable="PlotBtn" member="yes">
+						<label>Plot</label>
+						<pos>216,8</pos>
+						<handler function="OnPlotBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticText" name="ID_RANGEXLBL" variable="RangeXLbl" member="yes">
+						<label>Min x, Max x</label>
+						<pos>328,14</pos>
+					</object>
+					<object class="wxTextCtrl" name="ID_RANGEXTEXTCTRL" variable="RangeXTextCtrl" member="yes">
+						<value>0,10</value>
+						<pos>410,10</pos>
+						<size>88,21</size>
+					</object>
+					<object class="wxCheckBox" name="ID_XINTEGERCHKBOX" variable="XIntegerChkBox" member="yes">
+						<label>x is an integer</label>
+						<pos>512,16</pos>
+					</object>
+					<object class="wxStaticText" name="ID_NOOFPOINTSLBL" variable="NoOfPointsLbl" member="yes">
+						<label>No. of points (only for continuous plot)</label>
+						<pos>328,36</pos>
+					</object>
+					<object class="wxTextCtrl" name="ID_NOOFPOINTSTEXTCTRL" variable="NoOfPointsTextCtrl" member="yes">
+						<value>1000</value>
+						<pos>565,32</pos>
+						<size>80,21</size>
+					</object>
+					<object class="wxStaticText" name="ID_OPERATORSLBL" variable="OperatorsLbl" member="yes">
+						<label>(+, -, *, /, %, ^)</label>
+						<pos>384,88</pos>
+					</object>
+					<object class="wxStaticText" name="ID_FUNCTIONLBL" variable="FunctionLbl" member="yes">
+						<label>(min, max, avg, sum, abs, ceil, floor, round, roundn, exp, log, log10, logn, root, sqrt, clamp, inrange)</label>
+						<pos>216,56</pos>
+					</object>
+					<object class="wxStaticText" name="ID_TRIGOLBL" variable="TrigoLbl" member="yes">
+						<label>(sin, cos, tan, acos, asin, atan, atan2, cosh, cot, csc, sec, sinh, tanh, d2r, r2d, d2g, g2d, hypot)</label>
+						<pos>216,72</pos>
+					</object>
+					<object class="wxStaticText" name="ID_INEQUALITYLBL" variable="InequalityLbl" member="yes">
+						<label>(=, ==, &lt;&gt;, !=, &lt;, &lt;=, &gt;, &gt;=)</label>
+						<pos>216,88</pos>
+					</object>
+					<object class="wxStaticText" name="ID_LOGICALLBL" variable="LogicalLbl" member="yes">
+						<label>(and, nand, nor, not, or, xor, xnor, mand, mor)</label>
+						<pos>480,88</pos>
+					</object>
+					<object class="wxStaticText" name="ID_EXAMPLESLBL" variable="ExamplesLbl" member="yes">
+						<label>Examples</label>
+						<pos>8,312</pos>
+					</object>
+					<object class="wxButton" name="ID_FIBONNACCIBTN" variable="FibonnacciBtn" member="yes">
+						<label>Fibonnacci</label>
+						<pos>8,328</pos>
+						<size>80,23</size>
+						<handler function="OnFibonnacciBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_PIECEWISEBTN" variable="PiecewiseBtn" member="yes">
+						<label>Piecewise</label>
+						<pos>8,352</pos>
+						<size>80,23</size>
+						<handler function="OnPiecewiseBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_POLYNOMIALBTN" variable="PolynomialBtn" member="yes">
+						<label>Polynomial</label>
+						<pos>104,328</pos>
+						<size>88,23</size>
+						<handler function="OnPolynomialBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_FLOORBTN" variable="FloorBtn" member="yes">
+						<label>Floor</label>
+						<pos>104,352</pos>
+						<size>88,23</size>
+						<handler function="OnFloorBtnClick" entry="EVT_BUTTON" />
+					</object>
+				</object>
+				<label>Graph</label>
+			</object>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_TREEPANEL" variable="TreePanel" member="yes">
+					<object class="wxTextCtrl" name="ID_INORDERTEXTCTRL" variable="InOrderTextCtrl" member="yes">
+						<pos>96,40</pos>
+						<size>176,21</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_POSTORDERTEXTCTRL" variable="PostOrderTextCtrl" member="yes">
+						<pos>96,64</pos>
+						<size>176,21</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_PREORDERTEXTCTRL" variable="PreOrderTextCtrl" member="yes">
+						<pos>96,16</pos>
+						<size>176,21</size>
+					</object>
+					<object class="wxStaticText" name="ID_PREORDERLBL" variable="PreorderLbl" member="yes">
+						<label>Pre-order</label>
+						<pos>40,24</pos>
+					</object>
+					<object class="wxStaticText" name="ID_INORDERLBL" variable="InOrderLbl" member="yes">
+						<label>In-order</label>
+						<pos>40,44</pos>
+						<size>42,16</size>
+					</object>
+					<object class="wxStaticText" name="ID_POSTORDERLBL" variable="PostOrderLbl" member="yes">
+						<label>Post-order</label>
+						<pos>40,64</pos>
+					</object>
+					<object class="wxButton" name="ID_COMPUTEORDERBTN" variable="ComputeOrderBtn" member="yes">
+						<label>Compute</label>
+						<pos>96,88</pos>
+						<handler function="OnComputeOrderBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxRichTextCtrl" name="ID_TREERICHTEXTCTRL" variable="TreeRichTextCtrl" member="yes">
+						<pos>16,120</pos>
+						<size>808,272</size>
+					</object>
+				</object>
+				<label>Tree</label>
+			</object>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_GRAPH2PANEL" variable="Graph2Panel" member="yes">
+					<size>886,440</size>
+					<object class="wxGrid" name="ID_MATRIXGRID" variable="MatrixGrid" member="yes">
+						<cols>4</cols>
+						<rows>4</rows>
+						<defaultcolsize>50</defaultcolsize>
+						<collabels>
+							<item>A</item>
+							<item>B</item>
+							<item>C</item>
+							<item>D</item>
+							<item>E</item>
+							<item>F</item>
+							<item>G</item>
+							<item>H</item>
+							<item>I</item>
+							<item>J</item>
+							<item>K</item>
+							<item>L</item>
+							<item>M</item>
+							<item>N</item>
+							<item>O</item>
+						</collabels>
+						<rowlabels>
+							<item>A</item>
+							<item>B</item>
+							<item>C</item>
+							<item>D</item>
+							<item>E</item>
+							<item>F</item>
+							<item>G</item>
+							<item>H</item>
+							<item>I</item>
+							<item>J</item>
+							<item>K</item>
+							<item>L</item>
+							<item>M</item>
+							<item>N</item>
+							<item>O</item>
+						</rowlabels>
+						<pos>8,16</pos>
+						<size>424,192</size>
+					</object>
+					<object class="wxButton" name="ID_DETERMINANTBTN" variable="DeterminantBtn" member="yes">
+						<label>Compute determinant</label>
+						<pos>8,216</pos>
+						<handler function="OnDeterminantBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_DETERMINANTTEXTCTRL" variable="DeterminantTextCtrl" member="yes">
+						<pos>8,248</pos>
+						<size>120,21</size>
+					</object>
+					<object class="wxStaticText" name="ID_ROWSLBL" variable="RowsLbl" member="yes">
+						<label>No. of rows/columns</label>
+						<pos>160,220</pos>
+						<hidden>1</hidden>
+					</object>
+					<object class="wxTextCtrl" name="ID_ROWSTEXTCTRL" variable="RowsTextCtrl" member="yes">
+						<pos>280,216</pos>
+						<enabled>0</enabled>
+						<hidden>1</hidden>
+						<tooltip>Accepts only a integer, matrix is restricted to square matrix</tooltip>
+					</object>
+					<object class="wxButton" name="ID_SETGRIDBTN" variable="SetGridBtn" member="yes">
+						<label>Set matrix grid</label>
+						<pos>280,240</pos>
+						<size>100,23</size>
+						<enabled>0</enabled>
+						<hidden>1</hidden>
+						<handler function="OnSetGridBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_ROUTESBTN" variable="RoutesBtn" member="yes">
+						<label>Print routes</label>
+						<pos>440,280</pos>
+						<size>68,23</size>
+						<handler function="OnRoutesBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxRichTextCtrl" name="ID_ROUTESRICHTEXTCTRL" variable="RoutesRichTextCtrl" member="yes">
+						<pos>440,8</pos>
+						<size>416,264</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_ROUTESTEXTCTRL" variable="RoutesTextCtrl" member="yes">
+						<value>1</value>
+						<pos>656,296</pos>
+						<size>120,21</size>
+						<tooltip> used only for random walk</tooltip>
+					</object>
+					<object class="wxStaticText" name="ID_LENGTHLBL" variable="LengthLbl" member="yes">
+						<label>Length of random walk</label>
+						<pos>656,280</pos>
+					</object>
+					<object class="wxStaticText" name="ID_FROMLBL" variable="FromLbl" member="yes">
+						<label>From</label>
+						<pos>656,328</pos>
+					</object>
+					<object class="wxStaticText" name="ID_TOLBL" variable="ToLbl" member="yes">
+						<label>To</label>
+						<pos>656,348</pos>
+						<size>13,16</size>
+					</object>
+					<object class="wxTextCtrl" name="ID_FROMTEXTCTRL" variable="FromTextCtrl" member="yes">
+						<value>1</value>
+						<pos>688,320</pos>
+						<size>88,21</size>
+						<tooltip>Vertice label for start point (used only for random walk)</tooltip>
+					</object>
+					<object class="wxTextCtrl" name="ID_TOTEXTCTRL" variable="ToTextCtrl" member="yes">
+						<value>2</value>
+						<pos>688,344</pos>
+						<size>88,21</size>
+						<tooltip>Vertice label for end point (used only for random walk)</tooltip>
+					</object>
+					<object class="wxRadioBox" name="ID_ROUTESRADIOBOX" variable="RoutesRadioBox" member="yes">
+						<label>Types of routes</label>
+						<content>
+							<item>Random walk</item>
+							<item>Euler trail</item>
+							<item>Euler circuit</item>
+							<item>Hamiltonian circuit</item>
+						</content>
+						<default>-1</default>
+						<pos>520,280</pos>
+					</object>
+					<object class="wxButton" name="ID_CLEARMATRIXBTN" variable="ClearMatrixBtn" member="yes">
+						<label>Clear matrix</label>
+						<pos>160,272</pos>
+						<size>104,23</size>
+						<handler function="OnClearMatrixBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_MAKESYMMETRICBTN" variable="MakeSymmetricBtn" member="yes">
+						<label>Make symmetric</label>
+						<pos>160,296</pos>
+						<size>104,23</size>
+						<handler function="OnMakeSymmetricBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_LABELSBTN" variable="LabelsBtn" member="yes">
+						<label>Set labels</label>
+						<pos>280,348</pos>
+						<size>100,23</size>
+						<handler function="OnLabelsBtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+						<label>Labels</label>
+						<pos>224,328</pos>
+					</object>
+					<object class="wxTextCtrl" name="ID_LABELSTEXTCTRL" variable="LabelsTextCtrl" member="yes">
+						<pos>280,324</pos>
+						<size>96,21</size>
+						<tooltip>&quot;pqrs&quot; or &quot;p,q,r,s&quot; to set 4 vertices (each vertice can only be represented by a single alphabet or digit)</tooltip>
+					</object>
+					<object class="wxButton" name="ID_FILLEMPTYBTN" variable="FillEmptyBtn" member="yes">
+						<label>Fill empty spaces with 0</label>
+						<pos>272,272</pos>
+						<size>140,23</size>
+						<handler function="OnFillEmptyBtnClick" entry="EVT_BUTTON" />
+					</object>
+				</object>
+				<label>Graph2</label>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_MAINSTATUSBAR" variable="MainStatusBar" member="yes">
+			<fields>2</fields>
+			<widths>-10,-10</widths>
+			<styles>wxSB_NORMAL,wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
